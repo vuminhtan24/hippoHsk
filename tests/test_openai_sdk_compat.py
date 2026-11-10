@@ -14,7 +14,7 @@ from openai import AzureOpenAI, DefaultHttpxClient, OpenAI
 
 from hipporag.embedding_model.OpenAI import OpenAIEmbeddingModel
 from hipporag.llm.bedrock_mantle import BedrockMantleLLM, BedrockMantleSigV4Auth
-from hipporag.llm.openai_gpt import CacheOpenAI
+from hipporag.llm.openai_gpt import CacheOpenAI, EmptyResponseError
 from hipporag.utils.config_utils import BaseConfig
 from hipporag.utils.openai_utils import resolve_azure_openai_settings, validate_openai_base_url
 
@@ -146,6 +146,105 @@ class OpenAISDKCompatibilityTest(unittest.TestCase):
             llm.close()
 
         self.assertEqual(request_count, 2)
+
+    def test_blank_chat_retries_preserve_usage_and_cache_success(self):
+        requests = []
+
+        def handler(request):
+            requests.append(json.loads(request.content))
+            payload = chat_payload("   " if len(requests) == 1 else '{"triples": []}')
+            payload["usage"]["completion_tokens_details"] = {"reasoning_tokens": 2}
+            return SDK_HTTPX.Response(200, json=payload, request=request)
+
+        with tempfile.TemporaryDirectory() as save_dir, patch.dict(os.environ, {"OPENAI_API_KEY": "offline-key"}), patch("hipporag.llm.openai_gpt.time.sleep"):
+            config = BaseConfig(save_dir=save_dir, llm_extra_body={"thinking": {"type": "disabled"}})
+            llm = CacheOpenAI(save_dir, config, high_throughput=False)
+            llm.openai_client.close()
+            llm.openai_client = self.make_openai_client(handler)
+            try:
+                message, metadata, cache_hit = llm.infer([{"role": "user", "content": "extract triples"}])
+                cached_message, cached_metadata, cached = llm.infer([{"role": "user", "content": "extract triples"}])
+            finally:
+                llm.close()
+
+        self.assertEqual(message, '{"triples": []}')
+        self.assertFalse(cache_hit)
+        self.assertEqual(metadata["request_attempts"], 2)
+        self.assertEqual(metadata["prompt_tokens"], 4)
+        self.assertEqual(metadata["completion_tokens"], 6)
+        self.assertEqual(metadata["total_tokens"], 10)
+        self.assertEqual(metadata["reasoning_tokens"], 4)
+        self.assertEqual((cached_message, cached_metadata, cached), (message, metadata, True))
+        self.assertEqual(len(requests), 2)
+        self.assertTrue(all(body["thinking"] == {"type": "disabled"} for body in requests))
+
+    def test_blank_chat_retries_are_bounded_and_failures_are_not_cached(self):
+        requests = []
+
+        def handler(request):
+            requests.append(request)
+            payload = chat_payload(None)
+            payload["choices"][0]["finish_reason"] = "length"
+            payload["usage"]["completion_tokens_details"] = {"reasoning_tokens": 3}
+            return SDK_HTTPX.Response(200, json=payload, request=request)
+
+        with tempfile.TemporaryDirectory() as save_dir, patch.dict(os.environ, {"OPENAI_API_KEY": "offline-key"}), patch("hipporag.llm.openai_gpt.time.sleep"):
+            llm = CacheOpenAI(save_dir, BaseConfig(save_dir=save_dir), high_throughput=False, max_retries=5)
+            llm.openai_client.close()
+            llm.openai_client = self.make_openai_client(handler)
+            try:
+                for _ in range(2):
+                    with self.assertRaisesRegex(EmptyResponseError, "finish_reason=length.*reasoning_tokens=9.*attempts=3") as caught:
+                        llm.infer([{"role": "user", "content": "extract triples"}])
+                    self.assertEqual(caught.exception.metadata["total_tokens"], 15)
+            finally:
+                llm.close()
+        self.assertEqual(len(requests), 6)
+
+    def test_blank_refusal_or_missing_usage_is_not_retried(self):
+        for refusal in (False, True):
+            with self.subTest(refusal=refusal):
+                requests = []
+
+                def handler(request):
+                    requests.append(request)
+                    payload = chat_payload("")
+                    if refusal:
+                        payload["choices"][0]["message"]["refusal"] = "refused"
+                    else:
+                        payload.pop("usage")
+                    return SDK_HTTPX.Response(200, json=payload, request=request)
+
+                with tempfile.TemporaryDirectory() as save_dir, patch.dict(os.environ, {"OPENAI_API_KEY": "offline-key"}):
+                    llm = CacheOpenAI(save_dir, BaseConfig(save_dir=save_dir), high_throughput=False)
+                    llm.openai_client.close()
+                    llm.openai_client = self.make_openai_client(handler)
+                    try:
+                        with self.assertRaises(ValueError):
+                            llm.infer([{"role": "user", "content": "extract triples"}])
+                    finally:
+                        llm.close()
+                self.assertEqual(len(requests), 1)
+
+    def test_thinking_mode_changes_do_not_reuse_other_mode_cache(self):
+        requests = []
+
+        def handler(request):
+            requests.append(json.loads(request.content))
+            return SDK_HTTPX.Response(200, json=chat_payload(), request=request)
+
+        with tempfile.TemporaryDirectory() as save_dir, patch.dict(os.environ, {"OPENAI_API_KEY": "offline-key"}):
+            for mode in ("disabled", "enabled"):
+                config = BaseConfig(save_dir=save_dir, llm_extra_body={"thinking": {"type": mode}})
+                llm = CacheOpenAI(save_dir, config, high_throughput=False)
+                llm.openai_client.close()
+                llm.openai_client = self.make_openai_client(handler)
+                try:
+                    _, _, cache_hit = llm.infer([{"role": "user", "content": "extract triples"}])
+                    self.assertFalse(cache_hit)
+                finally:
+                    llm.close()
+        self.assertEqual([r["thinking"]["type"] for r in requests], ["disabled", "enabled"])
 
     def test_responses_wrapper_uses_real_typed_sdk_response(self):
         requests = []

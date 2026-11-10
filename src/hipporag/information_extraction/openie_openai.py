@@ -114,6 +114,7 @@ class OpenIE:
         except Exception as e:
             # For any other unexpected exceptions, log them and return with the error message
             logger.warning(e)
+            metadata.update(getattr(e, 'metadata', {}))
             metadata.update({'error': str(e)})
             return NerRawOutput(
                 chunk_id=chunk_key,
@@ -162,6 +163,7 @@ class OpenIE:
 
         except Exception as e:
             logger.warning(f"Exception for chunk {chunk_key}: {e}")
+            metadata.update(getattr(e, 'metadata', {}))
             metadata.update({'error': str(e)})
             return TripleRawOutput(
                 chunk_id=chunk_key,

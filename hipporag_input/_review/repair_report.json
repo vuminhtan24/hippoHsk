@@ -1,0 +1,134 @@
+{
+  "backup": "D:\\dev-thue\\KG\\output\\backups\\before_cell_repair_20261109_161153",
+  "changes": [
+    {
+      "page": 21,
+      "readings_recovered": 32,
+      "serials_corrected": 5,
+      "remaining_uncertain": 30
+    },
+    {
+      "page": 22,
+      "readings_recovered": 21,
+      "serials_corrected": 0,
+      "remaining_uncertain": 26
+    },
+    {
+      "page": 23,
+      "readings_recovered": 12,
+      "serials_corrected": 0,
+      "remaining_uncertain": 17
+    },
+    {
+      "page": 24,
+      "readings_recovered": 27,
+      "serials_corrected": 17,
+      "remaining_uncertain": 19
+    },
+    {
+      "page": 25,
+      "readings_recovered": 20,
+      "serials_corrected": 0,
+      "remaining_uncertain": 10
+    },
+    {
+      "page": 26,
+      "readings_recovered": 15,
+      "serials_corrected": 0,
+      "remaining_uncertain": 11
+    },
+    {
+      "page": 27,
+      "readings_recovered": 11,
+      "serials_corrected": 0,
+      "remaining_uncertain": 8
+    },
+    {
+      "page": 28,
+      "readings_recovered": 9,
+      "serials_corrected": 0,
+      "remaining_uncertain": 10
+    },
+    {
+      "page": 29,
+      "readings_recovered": 10,
+      "serials_corrected": 1,
+      "remaining_uncertain": 10
+    },
+    {
+      "page": 30,
+      "readings_recovered": 12,
+      "serials_corrected": 0,
+      "remaining_uncertain": 10
+    },
+    {
+      "page": 31,
+      "readings_recovered": 10,
+      "serials_corrected": 1,
+      "remaining_uncertain": 5
+    },
+    {
+      "page": 32,
+      "readings_recovered": 9,
+      "serials_corrected": 0,
+      "remaining_uncertain": 9
+    },
+    {
+      "page": 33,
+      "readings_recovered": 15,
+      "serials_corrected": 0,
+      "remaining_uncertain": 10
+    },
+    {
+      "page": 34,
+      "readings_recovered": 12,
+      "serials_corrected": 2,
+      "remaining_uncertain": 6
+    },
+    {
+      "page": 35,
+      "readings_recovered": 7,
+      "serials_corrected": 2,
+      "remaining_uncertain": 8
+    },
+    {
+      "page": 36,
+      "readings_recovered": 25,
+      "serials_corrected": 0,
+      "remaining_uncertain": 23
+    },
+    {
+      "page": 37,
+      "readings_recovered": 27,
+      "serials_corrected": 0,
+      "remaining_uncertain": 23
+    },
+    {
+      "page": 38,
+      "readings_recovered": 17,
+      "serials_corrected": 0,
+      "remaining_uncertain": 13
+    },
+    {
+      "page": 39,
+      "readings_recovered": 15,
+      "serials_corrected": 0,
+      "remaining_uncertain": 12
+    },
+    {
+      "page": 40,
+      "readings_recovered": 10,
+      "serials_corrected": 1,
+      "remaining_uncertain": 8
+    },
+    {
+      "page": 41,
+      "readings_recovered": 16,
+      "serials_corrected": 1,
+      "remaining_uncertain": 13
+    }
+  ],
+  "fully_verified": false,
+  "limitations": "Crop consensus is not independent visual verification. Syllable pinyin and other GF tables remain unresolved.",
+  "flagged_cells_superseded_by": "visual_verification.json"
+}

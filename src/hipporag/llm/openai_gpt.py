@@ -3,6 +3,9 @@ import hashlib
 import json
 import os
 import sqlite3
+import time
+from copy import deepcopy
+from contextlib import closing
 from typing import List, Tuple
 
 from filelock import FileLock
@@ -18,6 +21,36 @@ from .base import BaseLLM, LLMConfig, normalize_generation_token_params
 from .gateways import chat_max_tokens_key
 
 logger = get_logger(__name__)
+
+
+class EmptyResponseError(ValueError):
+    """Keep usage from blank provider replies available to OpenIE error reporting."""
+
+    def __init__(self, message, metadata):
+        super().__init__(message)
+        self.metadata = metadata
+
+
+def _chat_response_metadata(response, choice):
+    usage = response.usage
+    if usage is None:
+        raise ValueError("OpenAI response omitted usage; HippoRAG cannot account for this request safely.")
+    total_tokens = getattr(usage, "total_tokens", None)
+    metadata = {
+        "prompt_tokens": usage.prompt_tokens,
+        "completion_tokens": usage.completion_tokens,
+        "total_tokens": total_tokens if total_tokens is not None else usage.prompt_tokens + usage.completion_tokens,
+        "finish_reason": choice.finish_reason,
+    }
+    for key, value in (("response_id", getattr(response, "id", None)), ("model", getattr(response, "model", None)), ("request_id", getattr(response, "_request_id", None))):
+        if value is not None:
+            metadata[key] = value
+    prompt_details = getattr(usage, "prompt_tokens_details", None)
+    completion_details = getattr(usage, "completion_tokens_details", None)
+    for key, value in (("cached_tokens", getattr(prompt_details, "cached_tokens", None)), ("reasoning_tokens", getattr(completion_details, "reasoning_tokens", None))):
+        if value is not None:
+            metadata[key] = value
+    return metadata
 
 
 def _validate_azure_request_model(global_config, request_model_name, params) -> None:
@@ -62,7 +95,7 @@ def cache_response(func):
         key_lock_file = f"{self.cache_file_name}.{key_hash[:2]}.lock"
         with FileLock(key_lock_file):
             with FileLock(database_lock_file):
-                with sqlite3.connect(self.cache_file_name) as conn:
+                with closing(sqlite3.connect(self.cache_file_name)) as conn, conn:
                     cursor = conn.cursor()
                     cursor.execute("""
                         CREATE TABLE IF NOT EXISTS cache (
@@ -80,7 +113,7 @@ def cache_response(func):
             message, metadata = func(self, *args, **kwargs)
 
             with FileLock(database_lock_file):
-                with sqlite3.connect(self.cache_file_name) as conn:
+                with closing(sqlite3.connect(self.cache_file_name)) as conn, conn:
                     conn.execute(
                         "INSERT OR REPLACE INTO cache (key, message, metadata) VALUES (?, ?, ?)",
                         (key_hash, message, json.dumps(metadata)),
@@ -161,6 +194,8 @@ class CacheOpenAI(BaseLLM):
             generate_params["seed"] = self.global_config.seed
         if self.global_config.temperature is not None:
             generate_params["temperature"] = self.global_config.temperature
+        if self.global_config.llm_extra_body is not None:
+            generate_params["extra_body"] = deepcopy(self.global_config.llm_extra_body)
         config_dict = {
             'llm_name': self.global_config.llm_name,
             'llm_base_url': self.global_config.llm_base_url,
@@ -182,38 +217,36 @@ class CacheOpenAI(BaseLLM):
         params["messages"] = messages
         logger.debug(f"Calling OpenAI GPT API with:\n{params}")
 
-        response = self.openai_client.chat.completions.create(**params)
-        if len(response.choices) != 1:
-            raise ValueError(f"HippoRAG expected exactly one OpenAI choice, received {len(response.choices)}.")
-        choice = response.choices[0]
-        response_message = choice.message.content
-        if not isinstance(response_message, str) or not response_message:
-            refusal = getattr(choice.message, "refusal", None)
-            detail = f" Refusal: {refusal}" if refusal else ""
-            raise ValueError(f"OpenAI response did not contain non-empty text.{detail}")
-        usage = response.usage
-        if usage is None:
-            raise ValueError("OpenAI response omitted usage; HippoRAG cannot account for this request safely.")
-        total_tokens = getattr(usage, "total_tokens", None)
-        metadata = {
-            "prompt_tokens": usage.prompt_tokens,
-            "completion_tokens": usage.completion_tokens,
-            "total_tokens": total_tokens if total_tokens is not None else usage.prompt_tokens + usage.completion_tokens,
-            "finish_reason": choice.finish_reason,
-        }
-        for key, value in (("response_id", getattr(response, "id", None)), ("model", getattr(response, "model", None)), ("request_id", getattr(response, "_request_id", None))):
-            if value is not None:
-                metadata[key] = value
-        prompt_details = getattr(usage, "prompt_tokens_details", None)
-        completion_details = getattr(usage, "completion_tokens_details", None)
-        cached_tokens = getattr(prompt_details, "cached_tokens", None)
-        reasoning_tokens = getattr(completion_details, "reasoning_tokens", None)
-        if cached_tokens is not None:
-            metadata["cached_tokens"] = cached_tokens
-        if reasoning_tokens is not None:
-            metadata["reasoning_tokens"] = reasoning_tokens
+        # SDK retries cover HTTP failures, not successful HTTP replies with blank text.
+        max_empty_retries = min(self.max_retries, 2)
+        totals = {}
+        for attempt in range(max_empty_retries + 1):
+            response = self.openai_client.chat.completions.create(**params)
+            if len(response.choices) != 1:
+                raise ValueError(f"HippoRAG expected exactly one OpenAI choice, received {len(response.choices)}.")
+            choice = response.choices[0]
+            metadata = _chat_response_metadata(response, choice)
+            for key in ("prompt_tokens", "completion_tokens", "total_tokens", "cached_tokens", "reasoning_tokens"):
+                if key in metadata:
+                    totals[key] = totals.get(key, 0) + metadata[key]
+            metadata.update(totals)
+            metadata["request_attempts"] = attempt + 1
+            response_message = choice.message.content
+            if isinstance(response_message, str) and response_message.strip():
+                return response_message, metadata
 
-        return response_message, metadata
+            detail = (
+                f"finish_reason={choice.finish_reason}; "
+                f"completion_tokens={metadata['completion_tokens']}; "
+                f"reasoning_tokens={metadata.get('reasoning_tokens', 'unknown')}; "
+                f"attempts={attempt + 1}"
+            )
+            message = f"OpenAI-compatible response did not contain non-empty text. {detail}"
+            refusal = getattr(choice.message, "refusal", None)
+            if refusal or getattr(choice.message, "tool_calls", None) or choice.finish_reason in {"content_filter", "tool_calls"} or attempt == max_empty_retries:
+                raise EmptyResponseError(message, metadata)
+            logger.warning("%s; retrying blank response.", message)
+            time.sleep(2 ** attempt)
 
     def close(self) -> None:
         self.openai_client.close()

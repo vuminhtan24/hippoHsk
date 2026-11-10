@@ -1,0 +1,141 @@
+{
+  "format": "content + metadata; convert each record to hipporag.Chunk",
+  "documents": [
+    {
+      "file": "ngu-am-bai-01-khai-quat.jsonl",
+      "source": "NGU-AM/NGU-AM/sources/bai-01-khai-quat.pdf",
+      "pages": 10,
+      "passages": 10,
+      "source_sha256": "63ea563c942f59e57d8df106251fcf72887b788bd3030a0ed7bbce1a17d13454"
+    },
+    {
+      "file": "ngu-am-bai-02-van-mau-va-thanh-dieu.jsonl",
+      "source": "NGU-AM/NGU-AM/sources/bai-02-van-mau-va-thanh-dieu.pdf",
+      "pages": 9,
+      "passages": 9,
+      "source_sha256": "4947557e788580be69724ca0d6c1eda8e149afa771bdeb5315ba1e20f89bddc5"
+    },
+    {
+      "file": "ngu-am-bai-03-thanh-mau.jsonl",
+      "source": "NGU-AM/NGU-AM/sources/bai-03-thanh-mau.pdf",
+      "pages": 7,
+      "passages": 7,
+      "source_sha256": "81483f4245134e26ae90aada9818182cf99dd4de5726dc0d23539e4be73016cf"
+    },
+    {
+      "file": "ngu-am-bai-04-thanh-mau.jsonl",
+      "source": "NGU-AM/NGU-AM/sources/bai-04-thanh-mau.pdf",
+      "pages": 7,
+      "passages": 7,
+      "source_sha256": "e9b7c609d378a26c7102670e58d7cb959e9b8c33d8d1a11fb1c84a3620ee19d2"
+    },
+    {
+      "file": "ngu-am-bai-05-cach-phat-am-van-mau-phuc.jsonl",
+      "source": "NGU-AM/NGU-AM/sources/bai-05-cach-phat-am-van-mau-phuc.pdf",
+      "pages": 6,
+      "passages": 6,
+      "source_sha256": "a7691c3184d3234e832c53a9edfebd0893c24d676330d589d320be6f727b0550"
+    },
+    {
+      "file": "ngu-am-bai-06-van-mau-mui.jsonl",
+      "source": "NGU-AM/NGU-AM/sources/bai-06-van-mau-mui.pdf",
+      "pages": 9,
+      "passages": 9,
+      "source_sha256": "0711f3b7b09322455c89b9128c6ffc66e43a18a12061528ada80207d34b4933f"
+    },
+    {
+      "file": "ngu-am-bai-07-thanh-nhe-va-quy-tac-viet-phien-am.jsonl",
+      "source": "NGU-AM/NGU-AM/sources/bai-07-thanh-nhe-va-quy-tac-viet-phien-am.pdf",
+      "pages": 5,
+      "passages": 5,
+      "source_sha256": "04746ccd13ec74aa85cf67d9fc89ad90acd00bf4c664021116eba312aed0b8be"
+    },
+    {
+      "file": "ngu-am-bai-08-bien-dieu.jsonl",
+      "source": "NGU-AM/NGU-AM/sources/bai-08-bien-dieu.pdf",
+      "pages": 5,
+      "passages": 5,
+      "source_sha256": "84969b54419ad826917202f1ccfd712e92ea3e878b2ba21f27a137bfbb96fd3e"
+    },
+    {
+      "file": "ngu-am-bai-09-am-uon-luoi-va-tro-tu-ngu-khi-a.jsonl",
+      "source": "NGU-AM/NGU-AM/sources/bai-09-am-uon-luoi-va-tro-tu-ngu-khi-a.pdf",
+      "pages": 7,
+      "passages": 7,
+      "source_sha256": "429d0e7d85d74a85337196a8d3a361a1eb57b97b2b65afa20be92edd50d8556e"
+    },
+    {
+      "file": "ngu-am-bai-10-trong-am-va-ngu-dieu-cua-cau.jsonl",
+      "source": "NGU-AM/NGU-AM/sources/bai-10-trong-am-va-ngu-dieu-cua-cau.pdf",
+      "pages": 7,
+      "passages": 7,
+      "source_sha256": "804c66bf8cdddd1abb1aedfbe5bf69d0d05fe28226b04808b7ccbc4579a968e8"
+    },
+    {
+      "file": "van-tu-bai-01-qua-trinh-hinh-thanh.jsonl",
+      "source": "VAN-TU/VAN-TU/sources/bai-01-qua-trinh-hinh-thanh.pdf",
+      "pages": 8,
+      "passages": 8,
+      "source_sha256": "7d8222c9c28d5b3abfc5650a4f1502a06eddaeb7c1361d7fc4c0115b57625974"
+    },
+    {
+      "file": "van-tu-bai-02-phuong-phap-tao-chu-han.jsonl",
+      "source": "VAN-TU/VAN-TU/sources/bai-02-phuong-phap-tao-chu-han.pdf",
+      "pages": 8,
+      "passages": 8,
+      "source_sha256": "3aef3b8164949a727b1f062bfa9d6850631df05c736f804a23f0ca72f6f45a85"
+    },
+    {
+      "file": "van-tu-bai-03-cac-net-co-ban-cua-chu-han.jsonl",
+      "source": "VAN-TU/VAN-TU/sources/bai-03-cac-net-co-ban-cua-chu-han.pdf",
+      "pages": 8,
+      "passages": 8,
+      "source_sha256": "393c29b2d40d0949e5da9354d70808d1e5873d4a39a0f0ccff6b0665fbeee97b"
+    },
+    {
+      "file": "van-tu-bai-04-quy-tac-but-thuan-cua-chu-han.jsonl",
+      "source": "VAN-TU/VAN-TU/sources/bai-04-quy-tac-but-thuan-cua-chu-han.pdf",
+      "pages": 6,
+      "passages": 6,
+      "source_sha256": "d4634b45f526500aea2ecd1ffda9cb6ef3ed16601085f31f3c124ebfe56ed041"
+    },
+    {
+      "file": "van-tu-bai-05-phuong-thuc-ket-cau-chu-han-va-bo-thu.jsonl",
+      "source": "VAN-TU/VAN-TU/sources/bai-05-phuong-thuc-ket-cau-chu-han-va-bo-thu.pdf",
+      "pages": 6,
+      "passages": 6,
+      "source_sha256": "0d31f0ddd19a12c7866644601d832534d03444289e2025835a7f9ff5f63b8d80"
+    },
+    {
+      "file": "van-tu-214-bo-thu.jsonl",
+      "source": "VAN-TU/VAN-TU/sources/214-bo-thu.pdf",
+      "pages": 6,
+      "passages": 214,
+      "source_sha256": "9be867fe6c37433530dbced91a318aa18b329d161f2c4764a5cd572c35863818"
+    },
+    {
+      "file": "hsk-exam-syllabus-2025.jsonl",
+      "source": "HSK_Exam_Syllabus_Official_2025 (4).pdf",
+      "pages": 406,
+      "passages": 11131,
+      "source_sha256": "ec74ce0439e837bbb15154be13e747ae798903b2fd3a331629df6c3b45504941"
+    },
+    {
+      "file": "gf0025-2021.jsonl",
+      "source": "GF0025-2021 国际中文教育中文水平等级标准.pdf",
+      "pages": 260,
+      "passages": 260,
+      "source_sha256": "e451fdf0899d9267bbd122db66e7e75bdd2851ad1e6732e47b6e960290d73a63"
+    }
+  ],
+  "limitations": [
+    "OCR is not full linguistic proofreading.",
+    "GF tables retain OCR lines and need review before production indexing.",
+    "HSK non-vocabulary tables retain source layout text; hierarchical cells need review."
+  ],
+  "ocr_recovery": {
+    "removed_score_filter": true,
+    "low_confidence_blocks_retained": 6324,
+    "layout_and_character_accuracy_not_fully_verified": true
+  }
+}

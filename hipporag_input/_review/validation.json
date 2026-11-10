@@ -1,0 +1,12 @@
+{
+  "documents": 18,
+  "all_jsonl_records_valid": true,
+  "gf_passages": 260,
+  "low_confidence_blocks_retained": 6324,
+  "backup": "D:\\dev-thue\\KG\\output\\backups\\hipporag_input_before_ocr_recovery_20261109_154545",
+  "scope": "Structural validation only; layout and OCR character accuracy require review.",
+  "latest_audit": "audit_report.json",
+  "semantic_completeness_verified": false,
+  "superseded_for_gf_cells_by": "repair_report.json",
+  "flagged_cells_superseded_by": "visual_verification.json"
+}

@@ -1,0 +1,236 @@
+{
+  "backup": "D:\\dev-thue\\KG\\output\\backups\\hipporag_input_audit_20261109_155905",
+  "changes": [
+    "Preserved all 114 preferred source page texts and illustration references in review assets.",
+    "Re-extracted 131 non-vocabulary HSK pages, excluding rotated watermark spans only; retained horizontal standalone characters.",
+    "Reconstructed GF character-table pages 21–41 by numeric anchors and cell crops; retained OCR candidate readings in review files."
+  ],
+  "unresolved": [
+    {
+      "page": 21,
+      "character_cell_candidates": 190,
+      "uncertain_cells": 62,
+      "duplicate_serials": 3,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 22,
+      "character_cell_candidates": 190,
+      "uncertain_cells": 47,
+      "duplicate_serials": 1,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 23,
+      "character_cell_candidates": 205,
+      "uncertain_cells": 29,
+      "duplicate_serials": 0,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 24,
+      "character_cell_candidates": 190,
+      "uncertain_cells": 46,
+      "duplicate_serials": 2,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 25,
+      "character_cell_candidates": 190,
+      "uncertain_cells": 30,
+      "duplicate_serials": 1,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 26,
+      "character_cell_candidates": 205,
+      "uncertain_cells": 26,
+      "duplicate_serials": 0,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 27,
+      "character_cell_candidates": 189,
+      "uncertain_cells": 19,
+      "duplicate_serials": 1,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 28,
+      "character_cell_candidates": 190,
+      "uncertain_cells": 19,
+      "duplicate_serials": 2,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 29,
+      "character_cell_candidates": 205,
+      "uncertain_cells": 20,
+      "duplicate_serials": 1,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 30,
+      "character_cell_candidates": 190,
+      "uncertain_cells": 22,
+      "duplicate_serials": 0,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 31,
+      "character_cell_candidates": 205,
+      "uncertain_cells": 15,
+      "duplicate_serials": 0,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 32,
+      "character_cell_candidates": 206,
+      "uncertain_cells": 18,
+      "duplicate_serials": 0,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 33,
+      "character_cell_candidates": 205,
+      "uncertain_cells": 25,
+      "duplicate_serials": 0,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 34,
+      "character_cell_candidates": 205,
+      "uncertain_cells": 18,
+      "duplicate_serials": 0,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 35,
+      "character_cell_candidates": 205,
+      "uncertain_cells": 15,
+      "duplicate_serials": 0,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 36,
+      "character_cell_candidates": 185,
+      "uncertain_cells": 48,
+      "duplicate_serials": 1,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 37,
+      "character_cell_candidates": 194,
+      "uncertain_cells": 50,
+      "duplicate_serials": 1,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 38,
+      "character_cell_candidates": 210,
+      "uncertain_cells": 30,
+      "duplicate_serials": 0,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 39,
+      "character_cell_candidates": 196,
+      "uncertain_cells": 27,
+      "duplicate_serials": 1,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 40,
+      "character_cell_candidates": 205,
+      "uncertain_cells": 18,
+      "duplicate_serials": 1,
+      "serial_order_not_visually_verified": true
+    },
+    {
+      "page": 41,
+      "character_cell_candidates": 205,
+      "uncertain_cells": 29,
+      "duplicate_serials": 0,
+      "serial_order_not_visually_verified": true
+    },
+    "GF syllable pinyin, word-table columns and character-cell completeness still require visual verification; no claim of full semantic accuracy."
+  ],
+  "files": [
+    {
+      "file": "gf0025-2021.jsonl",
+      "passages": 260
+    },
+    {
+      "file": "hsk-exam-syllabus-2025.jsonl",
+      "passages": 11131
+    },
+    {
+      "file": "ngu-am-bai-01-khai-quat.jsonl",
+      "passages": 10
+    },
+    {
+      "file": "ngu-am-bai-02-van-mau-va-thanh-dieu.jsonl",
+      "passages": 9
+    },
+    {
+      "file": "ngu-am-bai-03-thanh-mau.jsonl",
+      "passages": 7
+    },
+    {
+      "file": "ngu-am-bai-04-thanh-mau.jsonl",
+      "passages": 7
+    },
+    {
+      "file": "ngu-am-bai-05-cach-phat-am-van-mau-phuc.jsonl",
+      "passages": 6
+    },
+    {
+      "file": "ngu-am-bai-06-van-mau-mui.jsonl",
+      "passages": 9
+    },
+    {
+      "file": "ngu-am-bai-07-thanh-nhe-va-quy-tac-viet-phien-am.jsonl",
+      "passages": 5
+    },
+    {
+      "file": "ngu-am-bai-08-bien-dieu.jsonl",
+      "passages": 5
+    },
+    {
+      "file": "ngu-am-bai-09-am-uon-luoi-va-tro-tu-ngu-khi-a.jsonl",
+      "passages": 7
+    },
+    {
+      "file": "ngu-am-bai-10-trong-am-va-ngu-dieu-cua-cau.jsonl",
+      "passages": 7
+    },
+    {
+      "file": "van-tu-214-bo-thu.jsonl",
+      "passages": 214
+    },
+    {
+      "file": "van-tu-bai-01-qua-trinh-hinh-thanh.jsonl",
+      "passages": 8
+    },
+    {
+      "file": "van-tu-bai-02-phuong-phap-tao-chu-han.jsonl",
+      "passages": 8
+    },
+    {
+      "file": "van-tu-bai-03-cac-net-co-ban-cua-chu-han.jsonl",
+      "passages": 8
+    },
+    {
+      "file": "van-tu-bai-04-quy-tac-but-thuan-cua-chu-han.jsonl",
+      "passages": 6
+    },
+    {
+      "file": "van-tu-bai-05-phuong-thuc-ket-cau-chu-han-va-bo-thu.jsonl",
+      "passages": 6
+    }
+  ],
+  "all_jsonl_valid": true,
+  "exact_duplicate_records": 0,
+  "superseded_for_gf_cells_by": "repair_report.json",
+  "flagged_cells_superseded_by": "visual_verification.json"
+}

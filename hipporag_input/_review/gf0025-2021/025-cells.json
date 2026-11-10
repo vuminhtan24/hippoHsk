@@ -1,0 +1,2412 @@
+[
+  {
+    "serial": "176",
+    "text": "缺",
+    "confidence": 0.4999578595161438,
+    "bbox": [
+      258.0,
+      229.5,
+      333.0,
+      255.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "177",
+    "text": "裙",
+    "confidence": 0.499192476272583,
+    "bbox": [
+      257.0,
+      267.0,
+      332.0,
+      293.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "178",
+    "text": "群",
+    "confidence": 0.4999833106994629,
+    "bbox": [
+      258.0,
+      304.0,
+      333.0,
+      330.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "179",
+    "text": "任",
+    "confidence": 0.49885013699531555,
+    "bbox": [
+      258.0,
+      341.5,
+      333.0,
+      367.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "180",
+    "text": "仍",
+    "confidence": 0.49809497594833374,
+    "bbox": [
+      258.0,
+      378.5,
+      333.0,
+      404.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "181",
+    "text": "容",
+    "confidence": 0.49703437089920044,
+    "bbox": [
+      258.0,
+      416.0,
+      333.0,
+      442.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "182",
+    "text": "赛",
+    "confidence": 0.4976302683353424,
+    "bbox": [
+      258.0,
+      453.0,
+      333.0,
+      479.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "183",
+    "text": "散",
+    "confidence": 0.4871997833251953,
+    "bbox": [
+      258.0,
+      490.5,
+      333.0,
+      516.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "184",
+    "text": "沙",
+    "confidence": 0.4723828136920929,
+    "bbox": [
+      258.0,
+      527.5,
+      333.0,
+      553.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "185",
+    "text": "衫",
+    "confidence": 0.3593853289882342,
+    "bbox": [
+      258.0,
+      564.5,
+      333.0,
+      590.5
+    ],
+    "needs_review": false,
+    "previous_text": "電衫",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "186",
+    "text": "善",
+    "confidence": 0.4989331066608429,
+    "bbox": [
+      258.0,
+      601.5,
+      333.0,
+      627.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "187",
+    "text": "伤",
+    "confidence": 0.49959680438041687,
+    "bbox": [
+      259.0,
+      639.0,
+      334.0,
+      665.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "188",
+    "text": "设",
+    "confidence": 0.49957650899887085,
+    "bbox": [
+      258.0,
+      676.5,
+      333.0,
+      702.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "189",
+    "text": "社",
+    "confidence": 0.49968668818473816,
+    "bbox": [
+      258.0,
+      713.0,
+      333.0,
+      739.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "190",
+    "text": "深",
+    "confidence": 0.3529322197039922,
+    "bbox": [
+      258.0,
+      750.0,
+      333.0,
+      776.0
+    ],
+    "needs_review": false,
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "191",
+    "text": "神",
+    "confidence": 0.49996399879455566,
+    "bbox": [
+      258.0,
+      788.5,
+      333.0,
+      814.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "192",
+    "text": "升",
+    "confidence": 0.49933841824531555,
+    "bbox": [
+      258.0,
+      825.0,
+      333.0,
+      851.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "193",
+    "text": "胜",
+    "confidence": 0.3582780137658119,
+    "bbox": [
+      258.0,
+      861.5,
+      333.0,
+      887.5
+    ],
+    "needs_review": false,
+    "previous_text": "強胜",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "194",
+    "text": "失",
+    "confidence": 0.3754690885543823,
+    "bbox": [
+      259.0,
+      899.5,
+      334.0,
+      925.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "195",
+    "text": "石",
+    "confidence": 0.4966302812099457,
+    "bbox": [
+      258.0,
+      936.5,
+      333.0,
+      962.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "196",
+    "text": "始",
+    "confidence": 0.37503182391325635,
+    "bbox": [
+      258.0,
+      973.0,
+      333.0,
+      999.0
+    ],
+    "needs_review": false,
+    "previous_text": "萬始",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "197",
+    "text": "世",
+    "confidence": 0.49924707412719727,
+    "bbox": [
+      258.0,
+      1010.5,
+      333.0,
+      1036.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "198",
+    "text": "式",
+    "confidence": 0.3437366634607315,
+    "bbox": [
+      258.0,
+      1048.5,
+      333.0,
+      1074.5
+    ],
+    "needs_review": false,
+    "previous_text": "歡式",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "199",
+    "text": "似",
+    "confidence": 0.4998023211956024,
+    "bbox": [
+      258.0,
+      1085.5,
+      333.0,
+      1111.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "200",
+    "text": "势",
+    "confidence": 0.49969375133514404,
+    "bbox": [
+      258.0,
+      1122.5,
+      333.0,
+      1148.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "1",
+    "text": "阿",
+    "confidence": 0.4665359854698181,
+    "bbox": [
+      255.0,
+      1264.0,
+      330.0,
+      1290.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "2",
+    "text": "矮",
+    "confidence": 0.49811309576034546,
+    "bbox": [
+      257.0,
+      1301.0,
+      332.0,
+      1327.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "3",
+    "text": "案",
+    "confidence": 0.4997175633907318,
+    "bbox": [
+      257.0,
+      1338.0,
+      332.0,
+      1364.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "4",
+    "text": "暗",
+    "confidence": 0.4996207356452942,
+    "bbox": [
+      257.0,
+      1375.5,
+      332.0,
+      1401.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "5",
+    "text": "巴",
+    "confidence": 0.503429114818573,
+    "bbox": [
+      259.0,
+      1412.0,
+      334.0,
+      1438.0
+    ],
+    "needs_review": false,
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "6",
+    "text": "摆",
+    "confidence": 0.4985310137271881,
+    "bbox": [
+      259.0,
+      1450.0,
+      334.0,
+      1476.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "7",
+    "text": "败",
+    "confidence": 0.36138419806957245,
+    "bbox": [
+      256.0,
+      1486.5,
+      331.0,
+      1512.5
+    ],
+    "needs_review": false,
+    "previous_text": "¥败",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "8",
+    "text": "伴",
+    "confidence": 0.499891072511673,
+    "bbox": [
+      257.0,
+      1523.5,
+      332.0,
+      1549.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "６",
+    "text": "薄",
+    "confidence": 0.4995543658733368,
+    "bbox": [
+      257.0,
+      1561.5,
+      332.0,
+      1587.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "10",
+    "text": "宝",
+    "confidence": 0.49981778860092163,
+    "bbox": [
+      258.0,
+      1598.0,
+      333.0,
+      1624.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "11",
+    "text": "抱",
+    "confidence": 0.36304401854674023,
+    "bbox": [
+      253.0,
+      1634.75,
+      328.0,
+      1660.75
+    ],
+    "needs_review": false,
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "12",
+    "text": "贝",
+    "confidence": 0.36542778710524243,
+    "bbox": [
+      256.0,
+      1672.5,
+      331.0,
+      1698.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "13",
+    "text": "倍",
+    "confidence": 0.4519846439361572,
+    "bbox": [
+      258.0,
+      1710.5,
+      333.0,
+      1736.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "201",
+    "text": "首",
+    "confidence": 0.4994712769985199,
+    "bbox": [
+      478.0,
+      229.5,
+      553.0,
+      255.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "202",
+    "text": "输",
+    "confidence": 0.4984729588031769,
+    "bbox": [
+      479.0,
+      267.5,
+      554.0,
+      293.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "203",
+    "text": "属",
+    "confidence": 0.4999734163284302,
+    "bbox": [
+      478.0,
+      304.5,
+      553.0,
+      330.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "204",
+    "text": "术",
+    "confidence": 0.4787619709968567,
+    "bbox": [
+      478.0,
+      341.5,
+      553.0,
+      367.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "205",
+    "text": "束",
+    "confidence": 0.23229137063026428,
+    "bbox": [
+      478.0,
+      378.5,
+      553.0,
+      404.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "206",
+    "text": "双",
+    "confidence": 0.36869701246420544,
+    "bbox": [
+      478.0,
+      416.5,
+      553.0,
+      442.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "207",
+    "text": "死",
+    "confidence": 0.4921574294567108,
+    "bbox": [
+      479.0,
+      453.0,
+      554.0,
+      479.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "208",
+    "text": "速",
+    "confidence": 0.4441705346107483,
+    "bbox": [
+      478.0,
+      490.5,
+      553.0,
+      516.5
+    ],
+    "needs_review": false,
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "209",
+    "text": "台",
+    "confidence": 0.49967506527900696,
+    "bbox": [
+      478.0,
+      527.5,
+      553.0,
+      553.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "210",
+    "text": "谈",
+    "confidence": 0.499933123588562,
+    "bbox": [
+      478.0,
+      565.0,
+      553.0,
+      591.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "211",
+    "text": "汤",
+    "confidence": 0.4988500773906708,
+    "bbox": [
+      478.0,
+      601.5,
+      553.0,
+      627.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "212",
+    "text": "糖",
+    "confidence": 0.4998818337917328,
+    "bbox": [
+      478.0,
+      639.5,
+      553.0,
+      665.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "213",
+    "text": "甜",
+    "confidence": 0.49891629815101624,
+    "bbox": [
+      477.0,
+      676.0,
+      552.0,
+      702.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "214",
+    "text": "跳",
+    "confidence": 0.49985912442207336,
+    "bbox": [
+      478.0,
+      713.5,
+      553.0,
+      739.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "215",
+    "text": "痛",
+    "confidence": 0.498588502407074,
+    "bbox": [
+      478.0,
+      751.0,
+      553.0,
+      777.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "216",
+    "text": "突",
+    "confidence": 0.4862578213214874,
+    "bbox": [
+      478.0,
+      788.5,
+      553.0,
+      814.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "217",
+    "text": "土",
+    "confidence": 0.31768061220645905,
+    "bbox": [
+      478.0,
+      825.0,
+      553.0,
+      851.0
+    ],
+    "needs_review": false,
+    "previous_text": "冏土",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "218",
+    "text": "团",
+    "confidence": 0.3864993800719579,
+    "bbox": [
+      478.0,
+      862.0,
+      553.0,
+      888.0
+    ],
+    "needs_review": false,
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "219",
+    "text": "退",
+    "confidence": 0.4994863271713257,
+    "bbox": [
+      478.0,
+      900.0,
+      553.0,
+      926.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "220",
+    "text": "望",
+    "confidence": 0.497625470161438,
+    "bbox": [
+      478.0,
+      937.0,
+      553.0,
+      963.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "221",
+    "text": "危",
+    "confidence": 0.49917203187942505,
+    "bbox": [
+      478.0,
+      973.5,
+      553.0,
+      999.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "222",
+    "text": "围",
+    "confidence": 0.4522972106933594,
+    "bbox": [
+      478.0,
+      1012.0,
+      553.0,
+      1038.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "223",
+    "text": "伟",
+    "confidence": 0.4933589696884155,
+    "bbox": [
+      478.0,
+      1048.5,
+      553.0,
+      1074.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "224",
+    "text": "卫",
+    "confidence": 0.4334523578484853,
+    "bbox": [
+      479.0,
+      1085.5,
+      554.0,
+      1111.5
+    ],
+    "needs_review": false,
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "225",
+    "text": "握",
+    "confidence": 0.4998285174369812,
+    "bbox": [
+      478.0,
+      1122.5,
+      553.0,
+      1148.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "14",
+    "text": "笨",
+    "confidence": 0.3098313510417938,
+    "bbox": [
+      476.0,
+      1263.5,
+      551.0,
+      1289.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "15",
+    "text": "毕",
+    "confidence": 0.48994356393814087,
+    "bbox": [
+      479.0,
+      1301.0,
+      554.0,
+      1327.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "16",
+    "text": "闭",
+    "confidence": 0.423763245344162,
+    "bbox": [
+      480.0,
+      1337.5,
+      555.0,
+      1363.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "17",
+    "text": "避",
+    "confidence": 0.4816424250602722,
+    "bbox": [
+      477.0,
+      1374.5,
+      552.0,
+      1400.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "18",
+    "text": "编",
+    "confidence": 0.4999634623527527,
+    "bbox": [
+      479.0,
+      1411.5,
+      554.0,
+      1437.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "19",
+    "text": "辩",
+    "confidence": 0.494499534368515,
+    "bbox": [
+      478.0,
+      1449.0,
+      553.0,
+      1475.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "20",
+    "text": "冰",
+    "confidence": 0.3460139334201813,
+    "bbox": [
+      477.0,
+      1486.5,
+      552.0,
+      1512.5
+    ],
+    "needs_review": false,
+    "previous_text": "焗冰",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "21",
+    "text": "兵",
+    "confidence": 0.22094988822937012,
+    "bbox": [
+      478.0,
+      1523.5,
+      553.0,
+      1549.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "22",
+    "text": "擦",
+    "confidence": 0.3735725556810697,
+    "bbox": [
+      477.0,
+      1561.0,
+      552.0,
+      1587.0
+    ],
+    "needs_review": false,
+    "previous_text": "無擦",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "23",
+    "text": "财",
+    "confidence": 0.35279054939746857,
+    "bbox": [
+      478.0,
+      1599.0,
+      553.0,
+      1625.0
+    ],
+    "needs_review": false,
+    "previous_text": "開财",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "24",
+    "text": "操",
+    "confidence": 0.4993830919265747,
+    "bbox": [
+      477.0,
+      1635.5,
+      552.0,
+      1661.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "25",
+    "text": "测",
+    "confidence": 0.4998945891857147,
+    "bbox": [
+      477.0,
+      1672.5,
+      552.0,
+      1698.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "26",
+    "text": "抄",
+    "confidence": 0.492318719625473,
+    "bbox": [
+      477.0,
+      1710.5,
+      552.0,
+      1736.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "226",
+    "text": "屋",
+    "confidence": 0.4999059736728668,
+    "bbox": [
+      699.0,
+      229.5,
+      774.0,
+      255.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "227",
+    "text": "武",
+    "confidence": 0.49973562359809875,
+    "bbox": [
+      699.0,
+      267.5,
+      774.0,
+      293.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "228",
+    "text": "舞",
+    "confidence": 0.4995013177394867,
+    "bbox": [
+      699.0,
+      304.5,
+      774.0,
+      330.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "229",
+    "text": "误",
+    "confidence": 0.4022483378648758,
+    "bbox": [
+      699.0,
+      341.5,
+      774.0,
+      367.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "230",
+    "text": "希",
+    "confidence": 0.4978756308555603,
+    "bbox": [
+      699.0,
+      379.5,
+      774.0,
+      405.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "231",
+    "text": "戏",
+    "confidence": 0.3836353272199631,
+    "bbox": [
+      699.0,
+      416.5,
+      774.0,
+      442.5
+    ],
+    "needs_review": false,
+    "previous_text": "¥戏",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "232",
+    "text": "显",
+    "confidence": 0.49918392300605774,
+    "bbox": [
+      699.0,
+      453.5,
+      774.0,
+      479.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "233",
+    "text": "险",
+    "confidence": 0.4998224973678589,
+    "bbox": [
+      699.0,
+      490.5,
+      774.0,
+      516.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "234",
+    "text": "线",
+    "confidence": 0.4985393285751343,
+    "bbox": [
+      698.0,
+      527.5,
+      773.0,
+      553.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "235",
+    "text": "乡",
+    "confidence": 0.49998509883880615,
+    "bbox": [
+      699.0,
+      565.0,
+      774.0,
+      591.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "236",
+    "text": "香",
+    "confidence": 0.33014047890901566,
+    "bbox": [
+      699.0,
+      601.5,
+      774.0,
+      627.5
+    ],
+    "needs_review": false,
+    "previous_text": "藍香藍",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "237",
+    "text": "箱",
+    "confidence": 0.4969784617424011,
+    "bbox": [
+      698.0,
+      639.5,
+      773.0,
+      665.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "238",
+    "text": "象",
+    "confidence": 0.36599234243233997,
+    "bbox": [
+      699.0,
+      676.5,
+      774.0,
+      702.5
+    ],
+    "needs_review": false,
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "239",
+    "text": "消",
+    "confidence": 0.49984824657440186,
+    "bbox": [
+      698.0,
+      713.5,
+      773.0,
+      739.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "240",
+    "text": "效",
+    "confidence": 0.4992242455482483,
+    "bbox": [
+      698.0,
+      750.5,
+      773.0,
+      776.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "241",
+    "text": "血",
+    "confidence": 0.49959829449653625,
+    "bbox": [
+      698.0,
+      788.5,
+      773.0,
+      814.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "242",
+    "text": "形",
+    "confidence": 0.49973151087760925,
+    "bbox": [
+      698.0,
+      825.0,
+      773.0,
+      851.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "243",
+    "text": "幸",
+    "confidence": 0.3132212460041046,
+    "bbox": [
+      698.0,
+      861.5,
+      773.0,
+      887.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "244",
+    "text": "性",
+    "confidence": 0.4995725154876709,
+    "bbox": [
+      698.0,
+      899.5,
+      773.0,
+      925.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "245",
+    "text": "修",
+    "confidence": 0.49905306100845337,
+    "bbox": [
+      698.0,
+      936.5,
+      773.0,
+      962.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "246",
+    "text": "需",
+    "confidence": 0.2644602656364441,
+    "bbox": [
+      691.0,
+      972.5,
+      766.0,
+      998.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "247",
+    "text": "续",
+    "confidence": 0.4999597668647766,
+    "bbox": [
+      695.0,
+      1010.5,
+      770.0,
+      1036.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "248",
+    "text": "宣",
+    "confidence": 0.4990982115268707,
+    "bbox": [
+      698.0,
+      1048.5,
+      773.0,
+      1074.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "249",
+    "text": "训",
+    "confidence": 0.4991298019886017,
+    "bbox": [
+      697.0,
+      1085.5,
+      772.0,
+      1111.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "250",
+    "text": "压",
+    "confidence": 0.4998592436313629,
+    "bbox": [
+      695.0,
+      1121.5,
+      770.0,
+      1147.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "27",
+    "text": "潮",
+    "confidence": 0.49844202399253845,
+    "bbox": [
+      698.0,
+      1264.0,
+      773.0,
+      1290.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "28",
+    "text": "彻",
+    "confidence": 0.460262656211853,
+    "bbox": [
+      699.0,
+      1301.0,
+      774.0,
+      1327.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "29",
+    "text": "沉",
+    "confidence": 0.49909862875938416,
+    "bbox": [
+      699.0,
+      1338.0,
+      774.0,
+      1364.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "30",
+    "text": "诚",
+    "confidence": 0.43585894505182904,
+    "bbox": [
+      699.0,
+      1375.0,
+      774.0,
+      1401.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "31",
+    "text": "承",
+    "confidence": 0.3615018849571546,
+    "bbox": [
+      698.0,
+      1412.5,
+      773.0,
+      1438.5
+    ],
+    "needs_review": false,
+    "previous_text": "車承",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "32",
+    "text": "迟",
+    "confidence": 0.4743310809135437,
+    "bbox": [
+      697.0,
+      1449.5,
+      772.0,
+      1475.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "33",
+    "text": "尺",
+    "confidence": 0.20143266518910727,
+    "bbox": [
+      699.0,
+      1486.5,
+      774.0,
+      1512.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "34",
+    "text": "冲",
+    "confidence": 0.48482421040534973,
+    "bbox": [
+      697.0,
+      1523.5,
+      772.0,
+      1549.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "35",
+    "text": "虫",
+    "confidence": 0.48002302646636963,
+    "bbox": [
+      697.0,
+      1561.0,
+      772.0,
+      1587.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "36",
+    "text": "抽",
+    "confidence": 0.49080100655555725,
+    "bbox": [
+      699.0,
+      1598.5,
+      774.0,
+      1624.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "37",
+    "text": "窗",
+    "confidence": 0.3576962500810623,
+    "bbox": [
+      697.0,
+      1635.5,
+      772.0,
+      1661.5
+    ],
+    "needs_review": false,
+    "previous_text": "東窗",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "38",
+    "text": "纯",
+    "confidence": 0.49947935342788696,
+    "bbox": [
+      699.0,
+      1672.5,
+      774.0,
+      1698.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "39",
+    "text": "刺",
+    "confidence": 0.28725263476371765,
+    "bbox": [
+      698.0,
+      1711.0,
+      773.0,
+      1737.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "251",
+    "text": "烟",
+    "confidence": 0.4977004826068878,
+    "bbox": [
+      918.0,
+      229.5,
+      993.0,
+      255.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "252",
+    "text": "演",
+    "confidence": 0.49960774183273315,
+    "bbox": [
+      919.0,
+      267.5,
+      994.0,
+      293.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "253",
+    "text": "验",
+    "confidence": 0.4991828501224518,
+    "bbox": [
+      919.0,
+      304.5,
+      994.0,
+      330.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "254",
+    "text": "羊",
+    "confidence": 0.4807910621166229,
+    "bbox": [
+      919.0,
+      341.5,
+      994.0,
+      367.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "255",
+    "text": "义",
+    "confidence": 0.4971231520175934,
+    "bbox": [
+      919.0,
+      378.5,
+      994.0,
+      404.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "256",
+    "text": "艺",
+    "confidence": 0.3538541967670123,
+    "bbox": [
+      917.0,
+      415.0,
+      992.0,
+      441.0
+    ],
+    "needs_review": false,
+    "previous_text": "樂艺",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "257",
+    "text": "议",
+    "confidence": 0.49914464354515076,
+    "bbox": [
+      919.0,
+      453.0,
+      994.0,
+      479.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "258",
+    "text": "易",
+    "confidence": 0.49915868043899536,
+    "bbox": [
+      919.0,
+      490.5,
+      994.0,
+      516.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "259",
+    "text": "营",
+    "confidence": 0.499787837266922,
+    "bbox": [
+      919.0,
+      528.0,
+      994.0,
+      554.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "260",
+    "text": "赢",
+    "confidence": 0.4969523251056671,
+    "bbox": [
+      919.0,
+      565.0,
+      994.0,
+      591.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "261",
+    "text": "泳",
+    "confidence": 0.3666001707315445,
+    "bbox": [
+      918.0,
+      601.5,
+      993.0,
+      627.5
+    ],
+    "needs_review": false,
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "262",
+    "text": "优",
+    "confidence": 0.49187883734703064,
+    "bbox": [
+      918.0,
+      639.0,
+      993.0,
+      665.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "263",
+    "text": "邮",
+    "confidence": 0.4959582984447479,
+    "bbox": [
+      918.0,
+      676.5,
+      993.0,
+      702.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "264",
+    "text": "预",
+    "confidence": 0.481134831905365,
+    "bbox": [
+      916.0,
+      713.0,
+      991.0,
+      739.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "265",
+    "text": "员",
+    "confidence": 0.4982207119464874,
+    "bbox": [
+      918.0,
+      750.5,
+      993.0,
+      776.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "266",
+    "text": "约",
+    "confidence": 0.32674427330493927,
+    "bbox": [
+      919.0,
+      787.0,
+      994.0,
+      813.0
+    ],
+    "needs_review": false,
+    "previous_text": "丫约",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "267",
+    "text": "杂",
+    "confidence": 0.499689519405365,
+    "bbox": [
+      918.0,
+      825.5,
+      993.0,
+      851.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "268",
+    "text": "造",
+    "confidence": 0.4985491633415222,
+    "bbox": [
+      918.0,
+      861.0,
+      993.0,
+      887.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "269",
+    "text": "责",
+    "confidence": 0.4936286509037018,
+    "bbox": [
+      917.0,
+      899.0,
+      992.0,
+      925.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "270",
+    "text": "增",
+    "confidence": 0.49718254804611206,
+    "bbox": [
+      917.0,
+      935.0,
+      992.0,
+      961.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "271",
+    "text": "展",
+    "confidence": 0.4994581937789917,
+    "bbox": [
+      918.0,
+      972.5,
+      993.0,
+      998.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "272",
+    "text": "张",
+    "confidence": 0.49484729766845703,
+    "bbox": [
+      917.0,
+      1011.0,
+      992.0,
+      1037.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "273",
+    "text": "章",
+    "confidence": 0.38374070326487225,
+    "bbox": [
+      919.0,
+      1048.5,
+      994.0,
+      1074.5
+    ],
+    "needs_review": false,
+    "previous_text": "萬章",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "274",
+    "text": "争",
+    "confidence": 0.4821564555168152,
+    "bbox": [
+      919.0,
+      1085.0,
+      994.0,
+      1111.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "275",
+    "text": "整",
+    "confidence": 0.4665697515010834,
+    "bbox": [
+      917.0,
+      1123.0,
+      992.0,
+      1149.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "40",
+    "text": "粗",
+    "confidence": 0.499811053276062,
+    "bbox": [
+      919.0,
+      1263.5,
+      994.0,
+      1289.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "41",
+    "text": "促",
+    "confidence": 0.499809205532074,
+    "bbox": [
+      919.0,
+      1300.5,
+      994.0,
+      1326.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "42",
+    "text": "寸",
+    "confidence": 0.4057641327381134,
+    "bbox": [
+      919.0,
+      1338.0,
+      994.0,
+      1364.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "43",
+    "text": "措",
+    "confidence": 0.43678295612335205,
+    "bbox": [
+      919.0,
+      1375.0,
+      994.0,
+      1401.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "44",
+    "text": "袋",
+    "confidence": 0.3443109641472499,
+    "bbox": [
+      918.0,
+      1412.5,
+      993.0,
+      1438.5
+    ],
+    "needs_review": false,
+    "previous_text": "無袋",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "45",
+    "text": "戴",
+    "confidence": 0.49933913350105286,
+    "bbox": [
+      918.0,
+      1450.0,
+      993.0,
+      1476.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "46",
+    "text": "担",
+    "confidence": 0.49366527795791626,
+    "bbox": [
+      918.0,
+      1486.5,
+      993.0,
+      1512.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "47",
+    "text": "淡",
+    "confidence": 0.4972175359725952,
+    "bbox": [
+      918.0,
+      1524.0,
+      993.0,
+      1550.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "48",
+    "text": "登",
+    "confidence": 0.4935508966445923,
+    "bbox": [
+      918.0,
+      1561.5,
+      993.0,
+      1587.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "49",
+    "text": "敌",
+    "confidence": 0.4999752640724182,
+    "bbox": [
+      919.0,
+      1598.5,
+      994.0,
+      1624.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "50",
+    "text": "递",
+    "confidence": 0.49985310435295105,
+    "bbox": [
+      916.0,
+      1635.25,
+      991.0,
+      1661.25
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "51",
+    "text": "顶",
+    "confidence": 0.4891222417354584,
+    "bbox": [
+      919.0,
+      1672.5,
+      994.0,
+      1698.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "52",
+    "text": "斗",
+    "confidence": 0.4974585175514221,
+    "bbox": [
+      918.0,
+      1711.0,
+      993.0,
+      1737.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "276",
+    "text": "证",
+    "confidence": 0.37172072380781174,
+    "bbox": [
+      1139.0,
+      229.5,
+      1214.0,
+      255.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "277",
+    "text": "支",
+    "confidence": 0.38657160103321075,
+    "bbox": [
+      1139.0,
+      267.5,
+      1214.0,
+      293.5
+    ],
+    "needs_review": false,
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "278",
+    "text": "汁",
+    "confidence": 0.4837878346443176,
+    "bbox": [
+      1139.0,
+      304.5,
+      1214.0,
+      330.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "279",
+    "text": "值",
+    "confidence": 0.49940168857574463,
+    "bbox": [
+      1139.0,
+      341.5,
+      1214.0,
+      367.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "280",
+    "text": "职",
+    "confidence": 0.39763830105463666,
+    "bbox": [
+      1139.0,
+      379.5,
+      1214.0,
+      405.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "281",
+    "text": "止",
+    "confidence": 0.45645274718602497,
+    "bbox": [
+      1139.0,
+      416.5,
+      1214.0,
+      442.5
+    ],
+    "needs_review": false,
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "282",
+    "text": "指",
+    "confidence": 0.4992183744907379,
+    "bbox": [
+      1139.0,
+      453.5,
+      1214.0,
+      479.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "283",
+    "text": "至",
+    "confidence": 0.36003511150677997,
+    "bbox": [
+      1139.0,
+      490.5,
+      1214.0,
+      516.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "284",
+    "text": "志",
+    "confidence": 0.47674936056137085,
+    "bbox": [
+      1138.0,
+      528.0,
+      1213.0,
+      554.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "285",
+    "text": "制",
+    "confidence": 0.4999238848686218,
+    "bbox": [
+      1139.0,
+      565.0,
+      1214.0,
+      591.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "286",
+    "text": "终",
+    "confidence": 0.4850156605243683,
+    "bbox": [
+      1139.0,
+      601.5,
+      1214.0,
+      627.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "287",
+    "text": "种",
+    "confidence": 0.4999426603317261,
+    "bbox": [
+      1139.0,
+      639.5,
+      1214.0,
+      665.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "288",
+    "text": "众",
+    "confidence": 0.4994596242904663,
+    "bbox": [
+      1140.0,
+      676.5,
+      1215.0,
+      702.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "289",
+    "text": "猪",
+    "confidence": 0.49993544816970825,
+    "bbox": [
+      1139.0,
+      713.0,
+      1214.0,
+      739.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "290",
+    "text": "注",
+    "confidence": 0.4947049617767334,
+    "bbox": [
+      1139.0,
+      750.0,
+      1214.0,
+      776.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "291",
+    "text": "祝",
+    "confidence": 0.3612963408231735,
+    "bbox": [
+      1135.0,
+      787.0,
+      1210.0,
+      813.0
+    ],
+    "needs_review": false,
+    "previous_text": "長祝",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "292",
+    "text": "抓",
+    "confidence": 0.35993391027053195,
+    "bbox": [
+      1140.0,
+      825.0,
+      1215.0,
+      851.0
+    ],
+    "needs_review": false,
+    "previous_text": "無抓",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "293",
+    "text": "专",
+    "confidence": 0.4976339042186737,
+    "bbox": [
+      1139.0,
+      862.5,
+      1214.0,
+      888.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "294",
+    "text": "转",
+    "confidence": 0.4999314546585083,
+    "bbox": [
+      1139.0,
+      900.5,
+      1214.0,
+      926.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "295",
+    "text": "状",
+    "confidence": 0.4959847629070282,
+    "bbox": [
+      1139.0,
+      937.0,
+      1214.0,
+      963.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "296",
+    "text": "追",
+    "confidence": 0.4707254469394684,
+    "bbox": [
+      1139.0,
+      974.0,
+      1214.0,
+      1000.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "297",
+    "text": "资",
+    "confidence": 0.4997522234916687,
+    "bbox": [
+      1139.0,
+      1011.5,
+      1214.0,
+      1037.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "298",
+    "text": "总",
+    "confidence": 0.3713530624906222,
+    "bbox": [
+      1139.0,
+      1048.5,
+      1214.0,
+      1074.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "299",
+    "text": "足",
+    "confidence": 0.4993335008621216,
+    "bbox": [
+      1139.0,
+      1086.0,
+      1214.0,
+      1112.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "300",
+    "text": "族",
+    "confidence": 0.4999305009841919,
+    "bbox": [
+      1139.0,
+      1123.0,
+      1214.0,
+      1149.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "53",
+    "text": "豆",
+    "confidence": 0.4993494153022766,
+    "bbox": [
+      1139.0,
+      1263.0,
+      1214.0,
+      1289.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "54",
+    "text": "独",
+    "confidence": 0.4996362030506134,
+    "bbox": [
+      1140.0,
+      1300.5,
+      1215.0,
+      1326.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "55",
+    "text": "堵",
+    "confidence": 0.47922810912132263,
+    "bbox": [
+      1138.0,
+      1338.0,
+      1213.0,
+      1364.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "56",
+    "text": "肚",
+    "confidence": 0.4959145486354828,
+    "bbox": [
+      1139.0,
+      1375.0,
+      1214.0,
+      1401.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "57",
+    "text": "锻",
+    "confidence": 0.49915018677711487,
+    "bbox": [
+      1140.0,
+      1412.5,
+      1215.0,
+      1438.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "58",
+    "text": "恶",
+    "confidence": 0.4240513741970062,
+    "bbox": [
+      1139.0,
+      1450.0,
+      1214.0,
+      1476.0
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "59",
+    "text": "耳",
+    "confidence": 0.4963234066963196,
+    "bbox": [
+      1140.0,
+      1486.5,
+      1215.0,
+      1512.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "60",
+    "text": "翻",
+    "confidence": 0.4981613755226135,
+    "bbox": [
+      1140.0,
+      1523.5,
+      1215.0,
+      1549.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "61",
+    "text": "吧",
+    "confidence": 0.358209731678168,
+    "bbox": [
+      1139.0,
+      1561.5,
+      1214.0,
+      1587.5
+    ],
+    "needs_review": false,
+    "previous_text": "無肥",
+    "recognition_method": "agreement_on_thresholded_crop_variants",
+    "visually_verified": true,
+    "verification_method": "AI visual comparison with rendered source PDF crop",
+    "verification_scope": "character glyph only; source serial separately checked where listed"
+  },
+  {
+    "serial": "62",
+    "text": "纷",
+    "confidence": 0.4996853172779083,
+    "bbox": [
+      1140.0,
+      1598.5,
+      1215.0,
+      1624.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "63",
+    "text": "奋",
+    "confidence": 0.4606678783893585,
+    "bbox": [
+      1140.0,
+      1635.5,
+      1215.0,
+      1661.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "64",
+    "text": "符",
+    "confidence": 0.49804601073265076,
+    "bbox": [
+      1139.0,
+      1672.5,
+      1214.0,
+      1698.5
+    ],
+    "needs_review": false
+  },
+  {
+    "serial": "65",
+    "text": "府",
+    "confidence": 0.4998818337917328,
+    "bbox": [
+      1139.0,
+      1711.0,
+      1214.0,
+      1737.0
+    ],
+    "needs_review": false
+  }
+]

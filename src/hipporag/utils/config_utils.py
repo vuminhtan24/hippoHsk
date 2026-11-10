@@ -55,6 +55,10 @@ class BaseConfig:
         default=None,
         metadata={"help": "Optional Chat Completions response_format used for OpenIE requests. Direct LLM calls can override it per request."}
     )
+    llm_extra_body: Optional[dict] = field(
+        default=None,
+        metadata={"help": "Optional provider-specific Chat Completions body fields, included in the response cache key."}
+    )
     bedrock_mantle_auth: Literal["api_key", "aws_credentials"] = field(
         default="api_key",
         metadata={"help": "Authentication method for the Amazon Bedrock Mantle endpoint."}
@@ -356,6 +360,8 @@ class BaseConfig:
             raise ValueError("max_new_tokens must be at least 1 when set.")
         if self.max_retry_attempts < 0:
             raise ValueError("max_retry_attempts cannot be negative.")
+        if self.llm_extra_body is not None and not isinstance(self.llm_extra_body, dict):
+            raise ValueError("llm_extra_body must be a dictionary when set.")
         if self.temperature is not None and not 0 <= self.temperature <= 2:
             raise ValueError("temperature must be between 0 and 2 when set.")
         if (self.azure_api_version or self.azure_chat_deployment) and not self.azure_endpoint:

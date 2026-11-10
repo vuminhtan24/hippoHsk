@@ -1,0 +1,7 @@
+{
+  "text": "## III. Tập viết\n\nCác hàng chữ mẫu, đọc từ trên xuống:\n\n| Hàng | Chữ mẫu |\n| --- | --- |\n| 1 | 一 |\n| 2 | 二 |\n| 3 | 三 |\n| 4 | 四 |\n| 5 | 五 |\n| 6 | 六 |\n| 7 | 七 |\n| 8 | 八 |\n| 9 | 九 |\n| 10 | 十 |\n| 11 | 日 |\n| 12 | 月 |\n| 13 | 火 |\n| 14 | 山 |\n| 15 | 右 |\n\nẢnh giữ nguyên các ô kẻ, chữ đen, chữ màu và mẫu mờ để tô theo. Văn bản trên ghi mỗi chữ mẫu một lần; không biến ô trống hoặc đường kẻ thành ký tự OCR.",
+  "assets": [
+    "VAN-TU/VAN-TU/documents/bai-04-quy-tac-but-thuan-cua-chu-han/pages/006/images/page_5_table_1.jpg"
+  ],
+  "page_image": "documents/bai-04-quy-tac-but-thuan-cua-chu-han/pages/006/source.jpg"
+}
