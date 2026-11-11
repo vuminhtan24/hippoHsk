@@ -1,0 +1,54 @@
+{
+  "schema_version": 4,
+  "rag_type": "hipporag",
+  "text_normalization": "unicode_alnum_casefold_v1",
+  "embedding": {
+    "provider": "transformers",
+    "model_name": "BAAI/bge-m3",
+    "base_url": null,
+    "azure_endpoint": null,
+    "azure_api_version": null,
+    "azure_deployment": null,
+    "normalized": true,
+    "max_sequence_length": 2048,
+    "dtype": "auto",
+    "vector_store_type": "parquet",
+    "vector_store_namespace": null,
+    "vector_store_namespace_fingerprint": null,
+    "vector_store_endpoint_fingerprint": null
+  },
+  "components": {
+    "embedding_model": "hipporag.embedding_model.Transformers.TransformersEmbeddingModel",
+    "extraction_llm": "hipporag.llm.openai_gpt.CacheOpenAI",
+    "text_preprocessor": "hipporag.preprocessing.TextPreprocessor",
+    "explicit_identity": null
+  },
+  "openie": {
+    "identity": {
+      "model_name": "deepseek-flash",
+      "azure_endpoint": null,
+      "azure_api_version": null,
+      "azure_deployment": null,
+      "temperature": 0,
+      "seed": null,
+      "response_format": null,
+      "ner_max_tokens": 2048,
+      "triple_max_tokens": 4096,
+      "prompt_schema": "hipporag_openie_v1",
+      "text_preprocessor": "hipporag.preprocessing.TextPreprocessor",
+      "explicit_identity": null
+    },
+    "producer": {
+      "mode": "online",
+      "class": "hipporag.llm.openai_gpt.CacheOpenAI",
+      "endpoint": "https://api.deepseek.com",
+      "region": null
+    }
+  },
+  "graph_construction": {
+    "synonymy_edge_topk": 2047,
+    "synonymy_edge_sim_threshold": 0.8,
+    "synonym_algorithm_schema": "cosine_knn_v1"
+  },
+  "is_directed_graph": false
+}

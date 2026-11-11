@@ -1,0 +1,84 @@
+{
+  "chunk-cce8f42b07079ef40bf2b66046f86ac8": {
+    "document": "GF0025-2021 国际中文教育中文水平等级标准.pdf",
+    "pdf_page": 1,
+    "standard_version": "GF0025-2021",
+    "qa_status": "unfiltered_ocr_requires_review",
+    "low_confidence_blocks": 0,
+    "ocr_blocks_path": "_review/gf0025-2021/001.json",
+    "input_file": "gf0025-2021.jsonl",
+    "input_line": 1
+  },
+  "chunk-98375f6d9b8950a6c67aab9226511d8a": {
+    "document": "GF0025-2021 国际中文教育中文水平等级标准.pdf",
+    "pdf_page": 2,
+    "standard_version": "GF0025-2021",
+    "qa_status": "unfiltered_ocr_requires_review",
+    "low_confidence_blocks": 3,
+    "ocr_blocks_path": "_review/gf0025-2021/002.json",
+    "input_file": "gf0025-2021.jsonl",
+    "input_line": 2,
+    "source_records": [
+      {
+        "document": "GF0025-2021 国际中文教育中文水平等级标准.pdf",
+        "pdf_page": 2,
+        "standard_version": "GF0025-2021",
+        "qa_status": "unfiltered_ocr_requires_review",
+        "low_confidence_blocks": 3,
+        "ocr_blocks_path": "_review/gf0025-2021/002.json",
+        "input_file": "gf0025-2021.jsonl",
+        "input_line": 2
+      },
+      {
+        "document": "GF0025-2021 国际中文教育中文水平等级标准.pdf",
+        "pdf_page": 4,
+        "standard_version": "GF0025-2021",
+        "qa_status": "unfiltered_ocr_requires_review",
+        "low_confidence_blocks": 3,
+        "ocr_blocks_path": "_review/gf0025-2021/004.json",
+        "input_file": "gf0025-2021.jsonl",
+        "input_line": 4
+      },
+      {
+        "document": "GF0025-2021 国际中文教育中文水平等级标准.pdf",
+        "pdf_page": 6,
+        "standard_version": "GF0025-2021",
+        "qa_status": "unfiltered_ocr_requires_review",
+        "low_confidence_blocks": 3,
+        "ocr_blocks_path": "_review/gf0025-2021/006.json",
+        "input_file": "gf0025-2021.jsonl",
+        "input_line": 6
+      }
+    ]
+  },
+  "chunk-39412d5a9c130da4a0a01c0fe6b351fd": {
+    "document": "GF0025-2021 国际中文教育中文水平等级标准.pdf",
+    "pdf_page": 3,
+    "standard_version": "GF0025-2021",
+    "qa_status": "unfiltered_ocr_requires_review",
+    "low_confidence_blocks": 11,
+    "ocr_blocks_path": "_review/gf0025-2021/003.json",
+    "input_file": "gf0025-2021.jsonl",
+    "input_line": 3
+  },
+  "chunk-63aeedec9cac53827c969c8d621f4b52": {
+    "document": "GF0025-2021 国际中文教育中文水平等级标准.pdf",
+    "pdf_page": 5,
+    "standard_version": "GF0025-2021",
+    "qa_status": "unfiltered_ocr_requires_review",
+    "low_confidence_blocks": 2,
+    "ocr_blocks_path": "_review/gf0025-2021/005.json",
+    "input_file": "gf0025-2021.jsonl",
+    "input_line": 5
+  },
+  "chunk-065b04e3ad23bc984fff97fadf87e93a": {
+    "document": "GF0025-2021 国际中文教育中文水平等级标准.pdf",
+    "pdf_page": 7,
+    "standard_version": "GF0025-2021",
+    "qa_status": "unfiltered_ocr_requires_review",
+    "low_confidence_blocks": 1,
+    "ocr_blocks_path": "_review/gf0025-2021/007.json",
+    "input_file": "gf0025-2021.jsonl",
+    "input_line": 7
+  }
+}
