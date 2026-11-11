@@ -75,6 +75,21 @@ def _extract_ner_from_response(real_response):
         return entities
 
 
+def _parse_ner_response(raw_response: str, metadata: Dict[str, Any]) -> List:
+    real_response = fix_broken_generated_json(raw_response) if metadata.get('finish_reason') == 'length' else raw_response
+    return _extract_ner_from_response(real_response)
+
+
+def _parse_triple_response(raw_response: str, metadata: Dict[str, Any]) -> List:
+    real_response = fix_broken_generated_json(raw_response) if metadata.get('finish_reason') == 'length' else raw_response
+    return _extract_json_list_field(real_response, "triples")
+
+
+def _supports_response_validator(llm_model) -> bool:
+    """Only the SQLite-cached chat classes understand the response_validator keyword."""
+    return hasattr(getattr(type(llm_model), "infer", None), "__wrapped__")
+
+
 class OpenIE:
     def __init__(self, llm_model: CacheOpenAI, max_workers: int = 8, ner_max_tokens: int = 2048, triple_max_tokens: int = 4096):
         # Init prompt template manager
@@ -99,16 +114,14 @@ class OpenIE:
             response_format = getattr(getattr(self.llm_model, "global_config", None), "response_format", None)
             if response_format is not None:
                 inference_kwargs["response_format"] = response_format
+            if _supports_response_validator(self.llm_model):
+                inference_kwargs["response_validator"] = _parse_ner_response
             raw_response, metadata, cache_hit = self.llm_model.infer(
                 messages=ner_input_message,
                 **inference_kwargs,
             )
             metadata['cache_hit'] = cache_hit
-            if metadata.get('finish_reason') == 'length':
-                real_response = fix_broken_generated_json(raw_response)
-            else:
-                real_response = raw_response
-            extracted_entities = _extract_ner_from_response(real_response)
+            extracted_entities = _parse_ner_response(raw_response, metadata)
             unique_entities = list(dict.fromkeys(extracted_entities))
 
         except Exception as e:
@@ -131,9 +144,6 @@ class OpenIE:
         )
 
     def triple_extraction(self, chunk_key: str, passage: str, named_entities: List[str]) -> TripleRawOutput:
-        def _extract_triples_from_response(real_response):
-            return _extract_json_list_field(real_response, "triples")
-
         # PREPROCESSING
         messages = self.prompt_template_manager.render(
             name='triple_extraction',
@@ -149,16 +159,14 @@ class OpenIE:
             response_format = getattr(getattr(self.llm_model, "global_config", None), "response_format", None)
             if response_format is not None:
                 inference_kwargs["response_format"] = response_format
+            if _supports_response_validator(self.llm_model):
+                inference_kwargs["response_validator"] = _parse_triple_response
             raw_response, metadata, cache_hit = self.llm_model.infer(
                 messages=messages,
                 **inference_kwargs,
             )
             metadata['cache_hit'] = cache_hit
-            if metadata.get('finish_reason') == 'length':
-                real_response = fix_broken_generated_json(raw_response)
-            else:
-                real_response = raw_response
-            extracted_triples = _extract_triples_from_response(real_response)
+            extracted_triples = _parse_triple_response(raw_response, metadata)
             triplets = filter_invalid_triples(triples=extracted_triples)
 
         except Exception as e:

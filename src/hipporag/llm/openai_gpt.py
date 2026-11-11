@@ -62,6 +62,10 @@ def _validate_azure_request_model(global_config, request_model_name, params) -> 
     if isinstance(extra_body, dict) and "model" in extra_body:
         raise ValueError("Azure extra_body must not override the configured deployment model.")
 
+# Requests per call when a response_validator keeps rejecting the reply.
+INVALID_RESPONSE_ATTEMPTS = 3
+
+
 def cache_response(func):
     @functools.wraps(func)
     def wrapper(self, *args, **kwargs):
@@ -74,6 +78,19 @@ def cache_response(func):
             messages = kwargs.get("messages")
         if messages is None:
             raise ValueError("Missing required 'messages' parameter for caching.")
+
+        # Optional callable(message, metadata) that raises when a reply is unusable. Unusable
+        # replies are re-requested and never cached, so one bad reply cannot poison every rerun.
+        response_validator = kwargs.pop("response_validator", None)
+
+        def is_usable(message, metadata):
+            if response_validator is None:
+                return True
+            try:
+                response_validator(message, metadata)
+            except Exception:
+                return False
+            return True
 
         # Include every generation parameter because any of them can change the response.
         gen_params = getattr(self, "llm_config", {}).generate_params if hasattr(self, "llm_config") else {}
@@ -108,9 +125,17 @@ def cache_response(func):
                     row = cursor.fetchone()
             if row is not None:
                 message, metadata_str = row
-                return message, json.loads(metadata_str), True
+                cached_metadata = json.loads(metadata_str)
+                if is_usable(message, cached_metadata):
+                    return message, cached_metadata, True
 
-            message, metadata = func(self, *args, **kwargs)
+            for validation_attempt in range(1, INVALID_RESPONSE_ATTEMPTS + 1):
+                message, metadata = func(self, *args, **kwargs)
+                if is_usable(message, metadata):
+                    break
+                if validation_attempt == INVALID_RESPONSE_ATTEMPTS:
+                    # Let the caller report the parse error; leave the cache untouched.
+                    return message, metadata, False
 
             with FileLock(database_lock_file):
                 with closing(sqlite3.connect(self.cache_file_name)) as conn, conn:
